@@ -26,8 +26,7 @@ public class App {
             })
             .build();
 
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ){
         Integer selectedOperation = 0;
         String endPoint = "";
         String requestBody = "";
@@ -67,7 +66,6 @@ public class App {
 
         exectuteSnowRequest(snowRequest);
     }
-
 
     private static HttpRequest buildSnowRequest(String endPoint, String method, String requestBody){
         URI snowEndPoint = URI.create(endPoint);
